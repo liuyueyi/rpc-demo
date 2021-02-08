@@ -10,6 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>thrfit</artifactId>
+    <groupId>com.github.liuyueyi.rpc.thrift</groupId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>thrift-api</module>
+        <module>base-thrift-server</module>
+    </modules>
 
 
 </project>
