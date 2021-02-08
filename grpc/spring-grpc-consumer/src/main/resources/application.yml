@@ -1,0 +1,7 @@
+grpc:
+  client:
+    GLOBAL:
+      address: 'static://127.0.0.1:9000'
+      enable-keep-alive: true
+      keep-alive-without-calls: true
+      negotiation-type: plaintext
