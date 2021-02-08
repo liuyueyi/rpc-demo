@@ -27,8 +27,11 @@
                 <configuration>
                     <!--  请确保thrift编译器已配置，加入到系统环境  -->
                     <thriftExecutable>thrift</thriftExecutable>
-                    <thriftSourceRoot>src/thrift</thriftSourceRoot>
+                    <!--  thrift文件所在的目录 -->
+                    <thriftSourceRoot>src/main/thrift</thriftSourceRoot>
+                    <!--  输出的java文件目录，项目源码目录 -->
                     <outputDirectory>${project.build.sourceDirectory}</outputDirectory>
+                    <!--  生产java文件 -->
                     <generator>java</generator>
                 </configuration>
                 <executions>

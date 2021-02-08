@@ -9,17 +9,17 @@ import io.grpc.ServerBuilder;
  */
 public class App {
     private Server server;
-    private final int port = 9000;
+    private final int PORT = 9000;
 
     public void start(HelloWordServiceImpl helloWordService) throws Exception {
-        server = ServerBuilder.forPort(port).addService(helloWordService)
+        server = ServerBuilder.forPort(PORT).addService(helloWordService)
                 .build().start();
 
-        System.out.println("server started on " + port);
+        System.out.println("server started on " + PORT);
         Runtime.getRuntime().addShutdownHook(new Thread() {
             @Override
             public synchronized void start() {
-                System.out.println("shutting down grpc erver");
+                System.out.println("shutting down grpc server");
                 App.this.stop();
                 System.out.println("already shut down");
             }
