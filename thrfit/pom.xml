@@ -16,6 +16,8 @@
         <module>thrift-api</module>
         <module>base-thrift-server</module>
         <module>base-thrift-consumer</module>
+        <module>spring-thrift-server</module>
+        <module>spring-thrift-consumer</module>
     </modules>
 
 

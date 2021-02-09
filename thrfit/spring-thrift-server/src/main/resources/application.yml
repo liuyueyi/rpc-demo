@@ -1,0 +1,4 @@
+thrift:
+  port: 9000
+  min-thread-pool: 4
+  max-thread-pool: 8

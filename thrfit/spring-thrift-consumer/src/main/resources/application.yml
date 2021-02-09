@@ -1,0 +1,10 @@
+thrift:
+  host: localhost
+  port: 9000
+  min-thread-pool: 4
+  max-thread-pool: 8
+  multi: true
+
+
+server:
+  port: 8081
