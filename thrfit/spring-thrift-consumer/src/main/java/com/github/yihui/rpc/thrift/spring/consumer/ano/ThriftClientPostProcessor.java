@@ -45,6 +45,7 @@ public class ThriftClientPostProcessor implements BeanPostProcessor {
                 final ThriftClient clientAnno = AnnotationUtils.findAnnotation(clientField, ThriftClient.class);
                 if (clientAnno != null) {
                     ReflectionUtils.makeAccessible(clientField);
+                    // fixme 这种注入方式，导致 ThriftClient 的实例不是单例的
                     ReflectionUtils.setField(clientField, bean, processInjectionPoint(clientField.getType()));
                 }
             }
